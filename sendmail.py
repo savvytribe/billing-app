@@ -9,15 +9,10 @@ smtp_port = 587  # Standard secure SMTP port
 smtp_server = "smtp.gmail.com"  # Google SMTP Server
 
 # Set up the email lists
-email_from = "from_user@gmail.com"
-email_list = [
-    "to_user1@gmail.com",
-    "to_user2@gmail.com",
-    "to_user3@gmail.com",
-]
-
+email_from = "dimitar.georgiev@savvytribe.tech"
+email_list = ["georgiev.dimitar13@gmail.com"]
 # Mail password (better to reference externally)
-pswd = "SomePass123"
+pswd = "kygk oosb adqe kesc"
 
 
 # Email subject
@@ -45,7 +40,7 @@ def send_emails(email_list):
         msg.attach(MIMEText(body, "plain"))
 
         # Define the file to attach
-        filename = "some_file.csv"
+        filename = "readme.md"
 
         # Open the file
         attachment = open(filename, "rb")
