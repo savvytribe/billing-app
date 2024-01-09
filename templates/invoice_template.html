@@ -1,5 +1,5 @@
 <!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>invoice_template_usable</title>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:2pt xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>invoice_template_usable</title>
     <style type="text/css"> * {margin:0; padding:0; text-indent:0; }
  .s1 { color: #424242; font-family:"Trebuchet MS", sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 14pt; }
  .s2 { color: #424242; font-family:"Trebuchet MS", sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
@@ -14,49 +14,120 @@
  .s12 { color: #424242; font-family:"Trebuchet MS", sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
  table, tbody {vertical-align: top; overflow: visible; }
 
-</style></head><body><p class="s1" style="padding-top: 3pt;padding-left: 19pt;text-indent: 0pt;text-align: left;">{{data.logo}}  ОРИГИНАЛ</p><p style="text-indent: 0pt;text-align: right;"><br/></p><p class="s1" style="padding-left: 26pt;text-indent: 0pt;text-align: left;">
-    Фактура {{data.name}}</p><p class="s2" style="padding-top: 7pt;padding-left: 27pt;text-indent: 0pt;text-align: left;">No: {{data.invoiceNumber}}
-    <span class="s3">ЕИК: {{data.iuBg}}</span></p><p class="s2" style="padding-top: 9pt;padding-left: 27pt;text-indent: 0pt;text-align: left;">{{data.PO}}
-    <span class="s3">ДДС No: {{data.vatBg}}</span></p><p style="padding-top: 8pt;padding-left: 27pt;text-indent: 0pt;text-align: left;">
-    Дата: {{data.date}} {{data.legalRepBg}}</p><p style="padding-top: 8pt;padding-left: 27pt;text-indent: 0pt;text-align: left;">
-    Срок за плащане: {{data.dueDate}} {{data.Address}}</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s1" style="padding-left: 28pt;text-indent: 0pt;text-align: left;">{{customerName}}</p>
-<p style="padding-top: 9pt;padding-left: 28pt;text-indent: 0pt;text-align: left;">{{data.legalRep}}</p><p style="padding-top: 6pt;padding-left: 28pt;text-indent: 0pt;text-align: left;">{{customerCity}}, {{customerAddress}}</p><p style="padding-top: 6pt;padding-left: 28pt;text-indent: 0pt;text-align: left;">
-    ЕИК: {{data.customerUiNumber}}| ДДС No: {{data.customerVatNumber}}</p><p style="text-indent: 0pt;text-align: left;"><br/></p>
+</style></head><body>
+<p class="s1" style="padding-top: 3pt; padding-left: 19pt; text-indent: 0pt; text-align: left;">
+    {{logo}}<span style="float: right;">ОРИГИНАЛ</span>
+</p>
+<p style="text-indent: 0pt;text-align: right;"><br/></p>
+<p class="s1" style="padding-left: 26pt; text-indent: 0pt; text-align: left;">
+    Фактура <span style="float: right">{{name}}</span>
+</p>
+<p class="s2" style="padding-top: 7pt;padding-left: 27pt;text-indent: 0pt;text-align: left;">
+    No: {{invoiceNumber}}
+    <span class="s3" style="float: right">ЕИК: {{iuBg}}</span></p><p class="s2" style="padding-top: 9pt;padding-left: 27pt;text-indent: 0pt;text-align: left;">
+    {{PO}}
+    <span class="s3" style="float: right">ДДС No: {{vatBg}}</span></p>
+<p style="padding-top: 8pt;padding-left: 27pt;text-indent: 0pt;text-align: left;">
+    Дата: {{date}} <span style="float: right">{{legalRepBg}}</span></p>
+<p style="padding-top: 8pt;padding-left: 27pt;text-indent: 0pt;text-align: left;">
+    Срок за плащане: {{dueDate}} <span style="float: right">{{Address}}</span></p>
+<p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s1" style="padding-left: 28pt;text-indent: 0pt;text-align: left;">
+    {{customerName}}</p>
+<p style="padding-top: 9pt;padding-left: 28pt;text-indent: 0pt;text-align: left;">
+    {{legalRep}}</p>
+<p style="padding-top: 6pt;padding-left: 28pt;text-indent: 0pt;text-align: left;">
+    {{customerCity}}, {{customerAddress}}</p>
+<p style="padding-top: 6pt;padding-left: 28pt;text-indent: 0pt;text-align: left;">
+    ЕИК: {{customerUiNumber}}| ДДС No: {{customerVatNumber}}</p>
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 
-<table style="border-collapse:collapse;margin-left:2.5pt" cellspacing="0"><tr style="height:24pt"><td style="width:16pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:192pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#1875D1"><p class="s4" style="padding-top: 7pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    Услуги</p></td><td style="width:190pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" colspan="2" bgcolor="#1875D1"><p class="s4" style="padding-top: 7pt;padding-left: 77pt;padding-right: 77pt;text-indent: 0pt;text-align: center;">
-    Период</p></td><td style="width:47pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#1875D1"><p class="s4" style="padding-top: 7pt;padding-right: 2pt;text-indent: 0pt;text-align: right;">
-    К-во</p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#1875D1"><p class="s4" style="padding-top: 7pt;padding-right: 3pt;text-indent: 0pt;text-align: right;">
-    Ед. Цена</p></td><td style="width:63pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#1875D1"><p class="s4" style="padding-top: 7pt;padding-left: 35pt;text-indent: 0pt;text-align: left;">
-    Общо</p></td></tr><tr style="height:70pt"><td style="width:16pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:192pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-left: 6pt;text-indent: 0pt;text-align: left;">
-   {{services}}</p></td>
-    <td style="width:116pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-left: 29pt;text-indent: 0pt;text-align: left;">
-        {{data.startDate}}</p></td><td style="width:74pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-left: 10pt;text-indent: 0pt;text-align: left;">
-        {{data.endDate}}</p></td><td style="width:47pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-right: 3pt;text-indent: 0pt;text-align: right;">
-        {{data.quantity}}</p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-right: 3pt;text-indent: 0pt;text-align: right;">
-        {{data.price}}</p></td><td style="width:63pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-right: 3pt;text-indent: 0pt;text-align: right;">
-        {{data.totalPrice}}</p><p class="s5" style="padding-right: 3pt;text-indent: 0pt;text-align: right;"></p></td></tr></table><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s6" style="padding-left: 135pt;text-indent: 0pt;text-align: left;">
-    </p><p class="s6" style="padding-top: 6pt;padding-left: 395pt;text-indent: 2pt;line-height: 155%;text-align: left;">
-    Данъчна основа: {{data.netAmountBgn}} ДДС ({{data.AddressvatPercentage}}): {{data.vatAmountBgn}}</p><p class="s7" style="text-indent: 0pt;text-align: center;">
-    За плащане (лв): {{data.totalAmountBgn}}</p><p class="s8" style="padding-top: 9pt;text-indent: 0pt;text-align: center;">
-    За плащане (€): {{data.totalAmountEur}}</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 28pt;text-indent: 0pt;text-align: left;">
-    {{data.vatReason}}</p><p style="text-indent: 0pt;text-align: left;"><br/></p>
-<table style="border-collapse:collapse;margin-left:28.5pt" cellspacing="0"><tr style="height:22pt"><td style="width:537pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" colspan="2" bgcolor="#D9D9D9"><p class="s9" style="padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
-    Начин на плащане: <b>{{data.paymentMethod}}</b></p></td></tr><tr style="height:18pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF" bgcolor="#F2F2F2"><p class="s9" style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
-    За плащане в <b>ЛЕВА</b>:</p></td><td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#F2F2F2"><p class="s9" style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
-    За плащане в <b>ЕВРО</b></p></td></tr><tr style="height:27pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF"><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    Получател: <b>{{data.customerNameBG}}</b></p></td><td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    Получател: <b>{{data.customerNameEN}}</b></p></td></tr><tr style="height:17pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    Основание: <b>{{data.invoiceNumber}}</b></p></td><td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    Основание: <b>{{data.invoiceNumber}}</b></p></td></tr><tr style="height:17pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    IBAN: <b>{{data.iban}}</b></p></td><td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    IBAN: <b>{{data.iban1}}</b></p></td></tr><tr style="height:17pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    Банка: <b>{{data.bank}}</b></p></td><td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    Банка: <b>{{data.bank1}}</b></p></td></tr><tr style="height:17pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    BIC/SWIFT: <b>{{data.swift}}</b></p></td></tr><tr style="height:17pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    Съставил: {{data.invoiceCreator}}</p></td><td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
-    Банков Адрес: <b>{{data.bank1Address}}</b></p></td></tr></table><p class="s12" style="padding-top: 3pt;padding-left: 28pt;text-indent: 0pt;line-height: 121%;text-align: left;">
+<table style="border-collapse:collapse;margin-left:2.5pt" cellspacing="0"><tr style="height:24pt"><td style="width:16pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF">
+    <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
+    <td style="width:192pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#1875D1">
+        <p class="s4" style="padding-top: 7pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Услуги</p></td>
+    <td style="width:190pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" colspan="2" bgcolor="#1875D1">
+        <p class="s4" style="padding-top: 7pt;padding-left: 77pt;padding-right: 77pt;text-indent: 0pt;text-align: center;">Период</p></td>
+    <td style="width:47pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#1875D1">
+        <p class="s4" style="padding-top: 7pt;padding-right: 2pt;text-indent: 0pt;text-align: right;">К-во</p></td>
+    <td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#1875D1">
+        <p class="s4" style="padding-top: 7pt;padding-right: 3pt;text-indent: 0pt;text-align: right;">Ед. Цена</p></td>
+    <td style="width:63pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#1875D1">
+        <p class="s4" style="padding-top: 7pt;padding-left: 35pt;text-indent: 0pt;text-align: left;">Общо</p></td></tr><tr style="height:70pt">
+    <td style="width:16pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF">
+        <p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:192pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+    <p class="s5" style="padding-left: 6pt;text-indent: 0pt;text-align: left;">{{services}}</p></td>
+    <td style="width:116pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+        <p class="s5" style="padding-left: 29pt;text-indent: 0pt;text-align: left;">{{startDate}}</p></td>
+    <td style="width:74pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+        <p class="s5" style="padding-left: 10pt;text-indent: 0pt;text-align: left;">{{endDate}}</p></td>
+    <td style="width:47pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+        <p class="s5" style="padding-right: 3pt;text-indent: 0pt;text-align: right;">{{quantity}}</p></td>
+    <td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF">
+        <p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-right: 3pt;text-indent: 0pt;text-align: right;">{{price}}</p></td>
+    <td style="width:63pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#D9D9D9;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF">
+        <p style="text-indent: 0pt;text-align: left;"><br/></p>
+        <p class="s5" style="padding-right: 3pt;text-indent: 0pt;text-align: right;">{{totalPrice}}</p>
+        <p class="s5" style="padding-right: 3pt;text-indent: 0pt;text-align: right;"></p></td></tr></table><p style="text-indent: 0pt;text-align: left;"><br/></p>
+        <p style="text-indent: 0pt;text-align: left;"><br/></p>
+        <p class="s6" style="padding-left: 135pt;text-indent: 0pt;text-align: left;">
+    </p>
+<p class="s6" style="padding-top: 6pt;padding-left: 395pt;text-indent: 2pt;line-height: 155%;text-align: left;">Данъчна основа: {{netAmountBgn}} </p>
+<p class="s7" style="text-indent: 0pt;text-align: center;">
+    <p class="s6" style="padding-top: 6pt;padding-left: 395pt;text-indent: 2pt;line-height: 155%;text-align: left;">
+    ДДС ({{vatPercentage}}): {{vatAmountBgn}}</p>
+<p class="s7" style = "padding-left: 395pt;text-indent: 2pt;line-height: 155%;text-align: left;">
+    За плащане (лв): {{totalAmountBgn}}</p>
+<p class="s8" style = "padding-left: 395pt;text-indent: 2pt;line-height: 155%;text-align: left;">
+    За плащане (€): {{totalAmountEur}}</p>
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="padding-left: 28pt;text-indent: 0pt;text-align: left;">
+    {{vatReason}}</p>
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<table style="border-collapse:collapse;margin-left:28.5pt" cellspacing="0">
+    <tr style="height:22pt"><td style="width:537pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" colspan="2" bgcolor="#D9D9D9"><p class="s9" style="padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    Начин на плащане: <b>{{paymentMethod}}</b></p></td></tr>
+    <tr style="height:18pt">
+        <td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF" bgcolor="#F2F2F2">
+            <p class="s9" style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    За плащане в <b>ЛЕВА</b>:</p></td>
+        <td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF" bgcolor="#F2F2F2">
+            <p class="s9" style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+    За плащане в <b>ЕВРО</b></p></td></tr>
+    <tr style="height:27pt">
+        <td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF">
+            <p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s5" style="padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    Получател: <b>{{customerNameBG}}</b></p></td>
+        <td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+            <p class="s5" style="padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    Получател: <b>{{customerNameEN}}</b></p></td></tr><tr style="height:17pt">
+    <td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF">
+        <p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    Основание: <b>{{invoiceNumber}}</b></p></td>
+    <td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF">
+        <p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    Основание: <b>{{invoiceNumber}}</b></p></td></tr>
+    <tr style="height:17pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF">
+        <p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    IBAN: <b>{{iban}}</b></p></td>
+        <td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    IBAN: <b>{{iban1}}</b></p></td></tr>
+    <tr style="height:17pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF">
+        <p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    Банка: <b>{{bank}}</b></p></td>
+        <td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    Банка: <b>{{bank1}}</b></p></td></tr>
+    <tr style="height:17pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF">
+        <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
+        <td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    BIC/SWIFT: <b>{{swift}}</b></p></td></tr>
+    <tr style="height:17pt"><td style="width:274pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#FFFFFF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#EFEFEF">
+        <p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    Съставил: {{invoiceCreator}}</p></td>
+        <td style="width:263pt;border-top-style:solid;border-top-width:1pt;border-top-color:#FFFFFF;border-left-style:solid;border-left-width:1pt;border-left-color:#EFEFEF;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#FFFFFF;border-right-style:solid;border-right-width:1pt;border-right-color:#FFFFFF"><p class="s5" style="padding-top: 4pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">
+    Банков Адрес: <b>{{bank1Address}}</b></p></td></tr></table><p class="s12" style="padding-top: 3pt;padding-left: 28pt;text-indent: 0pt;line-height: 121%;text-align: left;">
 
     <br>За да гарантираме правилното отразяване на Вашето плащане, винаги посочвайте <b>номера на фактурата </b>
     в основанието при извършването на плащането. <br>В случай, че сте избрали начина на плащане да бъде Дебитна/Кредитна карта,
-    ще опитаме да тарифираме Вашата карта автоматично, при издаване на фактура.</p></body></html>
+    ще опитаме да тарифираме Вашата карта автоматично, при издаване на фактура.</p>
+</body>
+</html>
